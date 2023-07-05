@@ -1,0 +1,29 @@
+{
+    "name": "flori/css-td2",
+    "description": "demo package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Flori\\CssTd2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florianeizd",
+            "email": "floriane.izd45@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+
+}
